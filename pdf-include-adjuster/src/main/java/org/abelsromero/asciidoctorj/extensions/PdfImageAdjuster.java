@@ -43,7 +43,7 @@ public class PdfImageAdjuster extends Treeprocessor {
                 String path = filterValidPath(paths, docdir, target);
                 if (path != null) {
                     // I can modify `target` but not imagesdir
-                    ((BlockImpl) b).setAttr("imagesdir", path, true);
+                    ((BlockImpl) b).getParent().setAttr("imagesdir", path, true);
                 }
             }
 
