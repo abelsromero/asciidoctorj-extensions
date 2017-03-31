@@ -1,0 +1,30 @@
+= Title
+:imagesdir: images
+
+This is just a document to test images includes.
+
+== First Section
+
+This images is in `images` directory.
+
+image::asciidoctor-icon.jpg[]
+
+== Second Section
+// Replaces imagesdir value from this point on
+ifdef::backend-pdf[]
+:imagesdir: more-images
+endif::[]
+
+This images isn't.
+ifdef::backend-pdf[]
+_You're seeing this message because this is a PDF document._
+endif::[]
+
+image::ruby.png[]
+
+== Third Section
+
+This image should only appear with the extension.
+
+image::sunset.jpg[]
+

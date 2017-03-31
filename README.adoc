@@ -1,0 +1,33 @@
+= Asciidoctor extensions
+Abel Salgado Romero <https://github.com/abelsromero[@abelsromero]>
+ifdef::env-github[]
+:branch: master
+:status:
+:outfilesuffix: .adoc
+:!toc-title:
+:caution-caption: :fire:
+:important-caption: :exclamation:
+:note-caption: :paperclip:
+:tip-caption: :bulb:
+:warning-caption: :warning:
+endif::[]
+
+This repository contains Asciidoctor Java extensions build with link:https://github.com/asciidoctor/asciidoctorj[Asciidoctorj] as well as a some integration examples.
+
+== Projects
+
+Each project is designed to be used independently without internal dependencies.
+The parent project is used only for convenience.
+
+maven-usage-example::
+Demonstrates how to integrate an extension into a maven pipeline using link:https://github.com/asciidoctor/asciidoctor-maven-plugin[asciidoctor-maven-plugin].
+See its profiles for the different examples provided.
+
+pdf-image-adjuster::
+Extension that adjusts include paths for documents
+
+
+== Using an extension
+
+You're free to use any of the extensions here provided you adhere to the link:LICENSE.adoc[licence].
+Each extension is build with maven, so you can build and install in local repositories easily.
